@@ -66,7 +66,7 @@ export default function ActivityCard({ title, description, image, link }: Activi
         <h3 className="activity-title">{title}</h3>
         <div className="activity-image">
           {image ? (
-            <img src={image} alt={title} style={{ width: '100%', height: '100%', objectFit: 'contain', backgroundColor: '#f9fafb' }} />
+            <img src={image} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
           ) : (
             <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9ca3af' }}>No image</div>
           )}

@@ -15,6 +15,12 @@ const music = [
     image: '/noexitsModernized.png',
     link: 'https://noexitsla.bandcamp.com/track/modernized',
   },
+  {
+    title: 'Utopian Voids Fall 2025 Compilation',
+    description: 'No Exits featured on this compilation',
+    image: '/utopianVoidsComp.png',
+    link: 'https://utopianvoids.bandcamp.com/album/fall-2025-compilation',
+  },
 ]
 
 export default function MusicGrid() {

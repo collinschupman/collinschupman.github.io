@@ -18,6 +18,12 @@ const activities = [
     description: 'Presented at Audio Developer Conference',
     image: '/adc.png',
   },
+  {
+    title: 'Kadenze Course TA',
+    description: 'Teaching Assistant for Output\'s course on creating audio plugins',
+    image: '/kadenze.png',
+    link: 'https://www.kadenze.com/programs/output-teaches-creating-audio-plugins-with-c-and-juce',
+  },
 ]
 
 export default function ActivitiesGrid() {
