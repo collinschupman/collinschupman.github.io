@@ -25,6 +25,7 @@ const projects = [
     tags: ['C++', 'Audio Programming', 'Pro Audio', 'Desktop Audio Software'],
     category: 'pro-audio' as const,
     image: '/creator.png',
+    link: 'https://output.com/products/creator',
   },
   {
     title: 'Thermal',
@@ -32,6 +33,7 @@ const projects = [
     tags: ['C++', 'Audio Programming', 'Pro Audio', 'Audio Plugins'],
     category: 'pro-audio' as const,
     image: '/thermalSquare.jpg',
+    link: 'https://output.com/products/thermal',
   },
   {
     title: 'Portal',
@@ -39,6 +41,7 @@ const projects = [
     tags: ['C++', 'Audio Programming', 'Pro Audio', 'Audio Plugins'],
     category: 'pro-audio' as const,
     image: '/portalSquare.jpg',
+    link: 'https://output.com/products/portal',
   },
   {
     title: 'Output Arcade',
@@ -53,6 +56,7 @@ const projects = [
     tags: ['C++', 'Audio Programming', 'Pro Audio', 'Audio Plugins'],
     category: 'pro-audio' as const,
     image: '/movementSquare.png',
+    link: 'https://output.com/products/movement',
   },
   {
     title: 'Lightweave',

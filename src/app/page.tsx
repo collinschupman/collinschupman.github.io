@@ -112,14 +112,14 @@ export default function Home() {
             <div style={{ marginBottom: '3rem' }}>
               <h2 className="text-2xl font-bold mb-4">Connect</h2>
               <div style={{ display: 'flex', gap: '1rem' }}>
-                <a href="mailto:collinschupman@gmail.com" className="hover:opacity-70 transition" title="Email">
-                  <span style={{ fontSize: '2rem' }}>📧</span>
+                <a href="mailto:collinschupman@gmail.com" className="hover:opacity-70 transition text-blue-600 hover:text-blue-800 hover:underline" title="Email">
+                  Email
                 </a>
-                <a href="https://www.linkedin.com/in/cschupman/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition" title="LinkedIn">
-                  <span style={{ fontSize: '2rem' }}>💼</span>
+                <a href="https://www.linkedin.com/in/cschupman/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition text-blue-600 hover:text-blue-800 hover:underline" title="LinkedIn">
+                  LinkedIn
                 </a>
-                <a href="https://discord.com/users/collinschupman" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition" title="Discord">
-                  <span style={{ fontSize: '2rem' }}>💬</span>
+                <a href="https://discord.com/users/collinschupman" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition text-blue-600 hover:text-blue-800 hover:underline" title="Discord">
+                  Discord
                 </a>
               </div>
             </div>
@@ -130,16 +130,16 @@ export default function Home() {
                   Hi, I'm an audio programmer and musician with a deep interest in audio technology across games, tools, and creative software.
                 </p>
                 <p>
-                  I currently live in Los Angeles and work as a Senior Audio Programmer at <a href="https://www.activision.com/studios/high-moon-studios" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">High Moon Studios</a> on the <a href="https://www.callofduty.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">Call of Duty</a> franchise, where I focus on audio rendering, game audio systems, pipelines and tooling, and cross-platform development. Alongside my work in games, I'm an active musician and wear many hats in my band, <a href="https://noexitsla.bandcamp.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">No Exits</a>.
+                  I live in Los Angeles and work as a Senior Audio Programmer at <a href="https://www.activision.com/studios/high-moon-studios" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">High Moon Studios</a> on the <a href="https://www.callofduty.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">Call of Duty</a> franchise, where I focus on audio rendering, game audio systems, pipelines and tooling, and cross-platform development. Alongside my work in games, I'm an active musician and wear many hats in my band, <a href="https://noexitsla.bandcamp.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">No Exits</a>.
                 </p>
                 <p>
-                  Before working in games, I spent several years developing audio plugins and desktop audio software at <a href="https://output.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">Output, Inc.</a> Prior to that, I served as the programming lead on a number of interactive exhibitions for <a href="https://futurecitieslab.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">Future Cities Labs</a>, and earlier worked as a contractor for Float Hybrid and Yeti LLCs. I began my career as an audio programming intern at the now-defunct Gas Powered Games.
+                  Before working in games, I spent several years developing audio plugins and desktop audio software at <a href="https://output.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">Output, Inc.</a> Prior to that, I served as the programming lead on interactive exhibitions for <a href="https://futurecitieslab.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">Future Cities Labs</a>, and earlier worked as a contractor for Float Hybrid (now defunct) and <a href="https://www.yeti.co/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">Yeti LLC</a>. I began my career as an audio programming intern at Gas Powered Games (now defunct).
                 </p>
                 <p>
                   I earned my bachelor's degree from the University of Washington's <a href="https://dxarts.washington.edu/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">Digital Arts and Experimental Media (DXARTS)</a> program, with a focus on audio programming, mechatronics, and general computer science.
                 </p>
                 <p>
-                  I have a proven track record of shipping high-performance audio software used by millions of players and creators. My expertise includes C++, real-time audio systems, digital signal processing, game programming, audio tooling, cross-platform applications, and audio plugin development.
+                  I have a proven track record of shipping high-performance audio software used by millions of players and creators. My expertise includes C++, real-time audio systems, digital signal processing, game programming, audio tooling, cross-platform applications, and audio plugin development. I'm comfortable working on, and making decisions for, projects operating at a billion-dollar scale.
                 </p>
               </div>
             </div>
@@ -227,7 +227,7 @@ export default function Home() {
                   Embody x Call of Duty Partnership
                 </a>
               </li>
-              <li>
+              <li style={{ paddingBottom: '1.5rem', borderBottom: '1px solid #e5e7eb' }}>
                 <a 
                   href="https://www.destroyexist.com/2021/06/no-exits-modernized.html" 
                   target="_blank" 
@@ -235,6 +235,16 @@ export default function Home() {
                   className="text-blue-600 hover:text-blue-800 hover:underline transition text-lg"
                 >
                   No Exits - Modernized - Destroy//Exist
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.engadget.com/2016-07-25-san-francisco-light-art-bay-bridge-lights.html" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 hover:underline transition text-lg"
+                >
+                  San Francisco Light Art - Bay Bridge Lights - Engadget
                 </a>
               </li>
             </ul>

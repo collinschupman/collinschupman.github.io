@@ -20,13 +20,14 @@ const work = [
   },
   {
     title: 'Float Hybrid',
-    description: 'Technology and development',
+    description: 'Technology and development (now defunct)',
     image: '/floatHybridjpg.jpg',
   },
   {
     title: 'Yeti LLC',
     description: 'Software development',
     image: '/yetijpg.jpg',
+    link: 'https://www.yeti.co/',
   },
   {
     title: 'Gas Powered Games',

@@ -5,14 +5,16 @@ import ActivityCard from './ActivityCard'
 const activities = [
   {
     title: 'Book Contribution',
-    description: 'Contributed to audio programming literature',
+    description: 'Contributed a chapter on writing alias-free oscillators for real time synthesis in game engines',
     image: '/book.jpg',
+    link: 'https://www.routledge.com/Game-Audio-Programming-5-Principles-and-Practices/Somberg/p/book/9781032852850',
     year: '2025',
   },
   {
     title: 'ADC Speaker',
-    description: 'Presented at Audio Developer Conference',
+    description: 'Mentor for budding audio programmers',
     image: '/adc.png',
+    link: 'https://audio.dev/mentorship/',
     year: '2023-Present',
   },
   {
@@ -24,8 +26,9 @@ const activities = [
   },
   {
     title: 'Teaching at Gray Area',
-    description: 'Instructor teaching audio programming and creative coding',
+    description: 'Mentor for creative coding bootcamp',
     image: '/grayArea.png',
+    link: 'https://grayarea.org/course/creative-code-intensive/',
     year: '2017',
   },
 ]
