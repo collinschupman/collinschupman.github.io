@@ -5,9 +5,10 @@ interface ActivityCardProps {
   description: string
   image?: string
   link?: string
+  year?: string
 }
 
-export default function ActivityCard({ title, description, image, link }: ActivityCardProps) {
+export default function ActivityCard({ title, description, image, link, year }: ActivityCardProps) {
   const cardContent = (
     <div style={{ width: '100%' }}>
       <style jsx>{`
@@ -71,10 +72,13 @@ export default function ActivityCard({ title, description, image, link }: Activi
             <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9ca3af' }}>No image</div>
           )}
           <div className="activity-overlay">
-            <p style={{ fontSize: '0.875rem', color: 'white', textAlign: 'center', lineHeight: '1.5' }}>{description}</p>
-            {link && (
-              <p style={{ fontSize: '0.75rem', color: '#60a5fa', marginTop: '0.75rem' }}>Click to learn more →</p>
+            <p style={{ fontSize: '0.875rem', color: 'white', textAlign: 'center', lineHeight: '1.5', marginBottom: '0.75rem' }}>{description}</p>
+            {year && (
+              <span style={{ fontSize: '0.75rem', color: '#d1d5db', backgroundColor: 'rgba(55, 65, 81, 0.5)', padding: '0.25rem 0.5rem', borderRadius: '0.25rem' }}>
+                {year}
+              </span>
             )}
+            <p style={{ fontSize: '0.75rem', color: '#60a5fa', marginTop: '0.75rem' }}>Click to learn more →</p>
           </div>
         </div>
       </div>

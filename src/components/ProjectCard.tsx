@@ -83,9 +83,7 @@ export default function ProjectCard({ title, description, tags, category, link, 
                 </span>
               ))}
             </div>
-            {link && (
-              <p style={{ fontSize: '0.75rem', color: '#60a5fa', marginTop: '0.75rem' }}>Click to learn more →</p>
-            )}
+            <p style={{ fontSize: '0.75rem', color: '#60a5fa', marginTop: '0.75rem' }}>Click to learn more →</p>
           </div>
         </div>
       </div>
