@@ -35,7 +35,12 @@ const activities = [
 
 export default function ActivitiesGrid() {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, 280px)', gap: '2rem', justifyContent: 'center' }}>
+    <div style={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', 
+      gap: '2rem', 
+      justifyContent: 'center' 
+    }}>
       {activities.map((activity, index) => (
         <ActivityCard key={index} {...activity} />
       ))}

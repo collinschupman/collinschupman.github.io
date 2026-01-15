@@ -70,7 +70,12 @@ const music = [
 
 export default function MusicGrid() {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, 280px)', gap: '2rem', justifyContent: 'center' }}>
+    <div style={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', 
+      gap: '2rem', 
+      justifyContent: 'center' 
+    }}>
       {music.map((item, index) => (
         <MusicCard key={index} {...item} />
       ))}

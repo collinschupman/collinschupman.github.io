@@ -50,3 +50,109 @@ a[href^="#"] {
   scrollbar-color: #c4c4b0 #fafaf9;
   scrollbar-width: thin;
 }
+/* Responsive Hero Grid */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.profile-container {
+  position: relative;
+  width: 400px;
+}
+
+.profile-image {
+  width: 400px;
+  height: 400px;
+}
+
+/* Section Dividers */
+.section-divider {
+  padding: 0 6rem;
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+  }
+  
+  .profile-container {
+    width: 300px;
+  }
+  
+  .profile-image {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .section-divider {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .profile-container {
+    width: min(400px, 90vw);
+  }
+  
+  .profile-image {
+    width: min(400px, 90vw);
+    height: min(400px, 90vw);
+  }
+  
+  .section-divider {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    width: min(320px, 85vw);
+  }
+  
+  .profile-image {
+    width: min(320px, 85vw);
+    height: min(320px, 85vw);
+  }
+}
+/* Mobile Typography and Spacing */
+@media (max-width: 768px) {
+  /* Reduce heading sizes on mobile */
+  section h2 {
+    font-size: 1.875rem !important; /* 30px */
+  }
+  
+  /* Reduce section spacing on mobile */
+  section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+    margin-top: 3rem !important;
+  }
+  
+  /* Reduce padding on containers */
+  .mx-auto.px-6 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 1.5rem !important; /* 24px */
+  }
+  
+  section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    margin-top: 2rem !important;
+  }
+}

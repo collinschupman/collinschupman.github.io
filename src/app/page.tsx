@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <div className="text-black min-h-screen" style={{ backgroundColor: '#FAF8F3' }}>
       {/* Hero Section */}
-      <section className="mx-auto px-6 pb-32" style={{ maxWidth: '1280px', paddingTop: '8rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '400px 1fr', gap: '4rem', alignItems: 'start' }}>
-          <div style={{ position: 'relative', width: '400px' }}>
+      <section className="mx-auto px-6 pb-32" style={{ maxWidth: '1280px', paddingTop: 'clamp(2rem, 10vw, 8rem)' }}>
+        <div className="hero-grid">
+          <div className="profile-container">
             <div 
-              className="relative overflow-hidden flex-shrink-0" 
-              style={{ width: '400px', height: '400px', borderRadius: '50%', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)' }}
+              className="relative overflow-hidden flex-shrink-0 profile-image" 
+              style={{ borderRadius: '50%', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)' }}
             >
               <img
                 src={profileImages[currentProfileIndex]}
@@ -30,7 +30,7 @@ export default function Home() {
                 className="w-full h-full object-cover"
                 style={{ 
                   transition: 'opacity 0.3s ease-in-out',
-                  objectPosition: currentProfileIndex === 1 ? 'center 30%' : 'center center'
+                  objectPosition: 'center center'
                 }}
               />
             </div>
@@ -111,7 +111,7 @@ export default function Home() {
           <div>
             <div style={{ marginBottom: '3rem' }}>
               <h2 className="text-2xl font-bold mb-4">Connect</h2>
-              <div style={{ display: 'flex', gap: '1rem' }}>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="mailto:collinschupman@gmail.com" className="hover:opacity-70 transition text-blue-600 hover:text-blue-800 hover:underline" title="Email">
                   Email
                 </a>
@@ -148,7 +148,7 @@ export default function Home() {
       </section>
 
       {/* Section Divider */}
-      <div className="mx-auto" style={{ maxWidth: '1280px', padding: '0 6rem' }}>
+      <div className="mx-auto section-divider" style={{ maxWidth: '1280px' }}>
         <div style={{ height: '1px', background: 'linear-gradient(to right, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent)' }}></div>
       </div>
 
@@ -161,7 +161,7 @@ export default function Home() {
       </section>
 
       {/* Section Divider */}
-      <div className="mx-auto" style={{ maxWidth: '1280px', padding: '0 6rem' }}>
+      <div className="mx-auto section-divider" style={{ maxWidth: '1280px' }}>
         <div style={{ height: '1px', background: 'linear-gradient(to right, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent)' }}></div>
       </div>
 
@@ -174,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* Section Divider */}
-      <div className="mx-auto" style={{ maxWidth: '1280px', padding: '0 6rem' }}>
+      <div className="mx-auto section-divider" style={{ maxWidth: '1280px' }}>
         <div style={{ height: '1px', background: 'linear-gradient(to right, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent)' }}></div>
       </div>
 
@@ -187,7 +187,7 @@ export default function Home() {
       </section>
 
       {/* Section Divider */}
-      <div className="mx-auto" style={{ maxWidth: '1280px', padding: '0 6rem' }}>
+      <div className="mx-auto section-divider" style={{ maxWidth: '1280px' }}>
         <div style={{ height: '1px', background: 'linear-gradient(to right, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent)' }}></div>
       </div>
 
@@ -253,7 +253,7 @@ export default function Home() {
       </section>
 
       {/* Section Divider */}
-      <div className="mx-auto" style={{ maxWidth: '1280px', padding: '0 6rem' }}>
+      <div className="mx-auto section-divider" style={{ maxWidth: '1280px' }}>
         <div style={{ height: '1px', background: 'linear-gradient(to right, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent)' }}></div>
       </div>
 
