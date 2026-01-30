@@ -24,6 +24,9 @@ export default function Navigation() {
           <Link href="#music" className="text-gray-300 hover:text-white transition">
             Music
           </Link>
+          <Link href="/blog" className="text-gray-300 hover:text-white transition">
+            Blog
+          </Link>
           <Link href="#press" className="text-gray-300 hover:text-white transition">
             Press
           </Link>
@@ -69,6 +72,13 @@ export default function Navigation() {
               onClick={() => setIsMenuOpen(false)}
             >
               Music
+            </Link>
+            <Link 
+              href="/blog" 
+              className="text-gray-300 hover:text-white transition py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
             </Link>
             <Link 
               href="#press" 

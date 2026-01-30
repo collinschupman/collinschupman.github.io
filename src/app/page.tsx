@@ -4,6 +4,7 @@ import { useState } from 'react'
 import ProjectsGrid from '@/components/ProjectsGrid'
 import ActivitiesGrid from '@/components/ActivitiesGrid'
 import MusicGrid from '@/components/MusicGrid'
+import BlogGrid from '@/components/BlogGrid'
 
 const profileImages = ['/profile.jpg', '/profile2.jpeg', '/profile4.jpg', '/profile5.jpeg', '/profile6.jpeg']
 
@@ -191,6 +192,34 @@ export default function Home() {
         <div style={{ height: '1px', background: 'linear-gradient(to right, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent)' }}></div>
       </div>
 
+      {/* Blog Section */}
+      <section id="blog" className="py-32 bg-white" style={{ marginTop: '120px' }}>
+        <div className="mx-auto px-6" style={{ maxWidth: '1280px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4rem' }}>
+            <h2 className="text-3xl font-bold tracking-tight">Blog:</h2>
+            <a 
+              href="/blog"
+              style={{
+                color: '#2563eb',
+                textDecoration: 'none',
+                fontSize: '1rem',
+                fontWeight: 600,
+                transition: 'color 0.2s'
+              }}
+              className="view-all-link"
+            >
+              View All Posts →
+            </a>
+          </div>
+          <BlogGrid />
+        </div>
+      </section>
+
+      {/* Section Divider */}
+      <div className="mx-auto section-divider" style={{ maxWidth: '1280px' }}>
+        <div style={{ height: '1px', background: 'linear-gradient(to right, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent)' }}></div>
+      </div>
+
       {/* Press Section */}
       <section id="press" className="py-32" style={{ marginTop: '120px' }}>
         <div className="mx-auto px-6" style={{ maxWidth: '1280px' }}>
@@ -265,19 +294,19 @@ export default function Home() {
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               <li style={{ paddingBottom: '1.5rem', borderBottom: '1px solid #e5e7eb' }}>
                 <span style={{ fontWeight: 600, color: '#374151' }}>Reading: </span>
-                <span style={{ color: '#4b5563' }}>Multiplayer Game Programming: Architecting Networked Games</span>
+                <span style={{ color: '#4b5563' }}>Game Engine Architecture</span>
               </li>
               <li style={{ paddingBottom: '1.5rem', borderBottom: '1px solid #e5e7eb' }}>
                 <span style={{ fontWeight: 600, color: '#374151' }}>Watching: </span>
-                <span style={{ color: '#4b5563' }}>PLUR1BUS</span>
+                <span style={{ color: '#4b5563' }}>Twin Peaks: Season 2</span>
               </li>
               <li style={{ paddingBottom: '1.5rem', borderBottom: '1px solid #e5e7eb' }}>
                 <span style={{ fontWeight: 600, color: '#374151' }}>Playing: </span>
-                <span style={{ color: '#4b5563' }}>Hollow Knight: Silksong</span>
+                <span style={{ color: '#4b5563' }}>Death Stranding 2: On the Beach</span>
               </li>
               <li>
                 <span style={{ fontWeight: 600, color: '#374151' }}>Listening To: </span>
-                <span style={{ color: '#4b5563' }}>David Bowie: Scary Monsters</span>
+                <span style={{ color: '#4b5563' }}>PVA: No More Like THis</span>
               </li>
             </ul>
           </div>
