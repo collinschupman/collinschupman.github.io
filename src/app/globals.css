@@ -156,3 +156,12 @@ a[href^="#"] {
     margin-top: 2rem !important;
   }
 }
+
+/* Blog styles */
+.back-link:hover {
+  color: #111827;
+}
+
+.view-all-link:hover {
+  color: #1d4ed8;
+}
