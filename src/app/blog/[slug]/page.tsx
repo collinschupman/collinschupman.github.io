@@ -5,10 +5,17 @@ import BlogPostContent from '@/components/BlogPostContent'
 
 // Required for static export
 export function generateStaticParams() {
+  // If no blog posts exist, return a placeholder to satisfy Next.js static export
+  if (blogPosts.length === 0) {
+    return [{ slug: '_placeholder' }]
+  }
+  
   return blogPosts.map((post) => ({
     slug: post.slug,
   }))
 }
+
+export const dynamicParams = false
 
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const post = getBlogPost(params.slug)
