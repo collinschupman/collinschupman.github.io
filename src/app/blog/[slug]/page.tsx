@@ -1,6 +1,3 @@
-'use client'
-
-import { useParams } from 'next/navigation'
 import { getBlogPost, blogPosts } from '@/data/blogPosts'
 import { Calendar, ArrowLeft, User, Clock } from 'lucide-react'
 import Link from 'next/link'
@@ -12,10 +9,8 @@ export function generateStaticParams() {
   }))
 }
 
-export default function BlogPost() {
-  const params = useParams()
-  const slug = params.slug as string
-  const post = getBlogPost(slug)
+export default function BlogPost({ params }: { params: { slug: string } }) {
+  const post = getBlogPost(params.slug)
 
   if (!post) {
     return (
