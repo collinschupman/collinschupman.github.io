@@ -8,7 +8,7 @@ const projects = [
     description: 'Audio programming for the Call of Duty: Modern Warfare 4 project.',
     tags: ['C++', 'Audio Programming', 'Game Development'],
     category: 'gaming' as const,
-    image: '/modernWarfare4.jpg',
+    image: '/modernWarfare4.png',
     link: 'https://www.callofduty.com/',
   },
   {

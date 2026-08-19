@@ -257,6 +257,15 @@ export default function Home() {
                 </a>
               </li>
               <li style={{ paddingBottom: '1.5rem', borderBottom: '1px solid #e5e7eb' }}>
+                <div style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', marginBottom: '1rem' }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/KOjUDyuSC70"
+                    title="More Modern Warfare 4 Gameplay - Sound Design & Proximity Chat"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+                  />
+                </div>
                 <a
                   href="https://www.youtube.com/watch?v=KOjUDyuSC70"
                   target="_blank"
