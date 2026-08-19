@@ -4,6 +4,14 @@ import ProjectCard from './ProjectCard'
 
 const projects = [
   {
+    title: 'Call of Duty: Modern Warfare 4',
+    description: 'Audio programming for the Call of Duty: Modern Warfare 4 project.',
+    tags: ['C++', 'Audio Programming', 'Game Development'],
+    category: 'gaming' as const,
+    image: '/modernWarfare4.jpg',
+    link: 'https://www.callofduty.com/',
+  },
+  {
     title: 'Call of Duty®: Black Ops 7',
     description: 'Latest entry in the iconic Call of Duty franchise.',
     tags: ['C++', 'Audio Programming', 'Game Development', '2025'],
