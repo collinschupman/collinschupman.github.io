@@ -257,7 +257,17 @@ export default function Home() {
                 </a>
               </li>
               <li style={{ paddingBottom: '1.5rem', borderBottom: '1px solid #e5e7eb' }}>
-                <a 
+                <a
+                  href="https://www.youtube.com/watch?v=KOjUDyuSC70"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 hover:underline transition text-lg"
+                >
+                  More Modern Warfare 4 Gameplay - Sound Design &amp; Proximity Chat
+                </a>
+              </li>
+              <li style={{ paddingBottom: '1.5rem', borderBottom: '1px solid #e5e7eb' }}>
+                <a
                   href="https://www.destroyexist.com/2021/06/no-exits-modernized.html" 
                   target="_blank" 
                   rel="noopener noreferrer"
